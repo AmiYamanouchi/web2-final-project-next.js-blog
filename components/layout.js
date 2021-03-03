@@ -1,10 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from './layout.module.css'
-import utilStyles from '../styles/utils.module.css'
+import styles from './layout.module.scss'
+import utilStyles from '../styles/utils.module.scss'
 import Link from 'next/link'
 
-const name = 'Ami Yamanouchi'
+const name = "Ami's Blog"
 export const siteTitle = 'Next.js Ami yamanouchi'
 
 export default function Layout({ children, home }) {
@@ -30,13 +30,13 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/profile.jpg"
+              src="/images/logo1.png"
               className={utilStyles.borderCircle}
-              height={144}
-              width={144}
+              height={300}
+              width={300}
               alt={name}
             />
-            <h1 className={utilStyles.heading2Xl}>{name}</h1>
+            {/* <h1 className={utilStyles.heading2Xl}>Ami Yamanouchi</h1> */}
           </>
         ) : (
           <>
@@ -44,19 +44,19 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/profile.jpg"
+                  src="/images/logo2.png"
                   className={utilStyles.borderCircle}
-                  height={108}
-                  width={108}
+                  height={200}
+                  width={300}
                   alt={name}
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
+            {/* <h2 className={utilStyles.headingXl}>
               <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
+                <a className={utilStyles.colorInherit}></a>
               </Link>
-            </h2>
+            </h2> */}
           </>
         )}
       </header>
