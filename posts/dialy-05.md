@@ -1,5 +1,5 @@
 ---
-title: ' 今日習ったことはなんでしょうか '
+title: ' Next.js has two forms '
 date: '2020-03-05'
 ---
 

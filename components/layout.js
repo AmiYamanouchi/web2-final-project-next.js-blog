@@ -30,10 +30,10 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src="/images/logo1.png"
+              src="/images/logo5.png"
               className={utilStyles.borderCircle}
-              height={300}
-              width={300}
+              height={500}
+              width={800}
               alt={name}
             />
             {/* <h1 className={utilStyles.heading2Xl}>Ami Yamanouchi</h1> */}
@@ -44,10 +44,10 @@ export default function Layout({ children, home }) {
               <a>
                 <Image
                   priority
-                  src="/images/logo2.png"
+                  src="/images/logo5.png"
                   className={utilStyles.borderCircle}
-                  height={200}
-                  width={300}
+                  height={350}
+                  width={650}
                   alt={name}
                 />
               </a>

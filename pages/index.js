@@ -21,16 +21,16 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
-        <p>Hello I'm Ami, welcome to my Next.js Blog</p>
-        <p>
-        I am a student at a programming school called <a href="https://ciccc.ca/">CICCC</a>.
+        <p className={utilStyles.textCenter}>Hello I'm Ami, welcome to my Next.js Blog</p>
+        <p className={utilStyles.textCenter}>
+        I am a student at a programming school called CICCC.
         </p>
         
-        <p>I created a simple blog site using Next.js in the final project assignment.</p>
+        <p className={utilStyles.textCenter}>I created a simple blog site using Next.js in the final project assignment.</p>
       </section>
 
-      <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={`${utilStyles.headingLg} ${utilStyles.underLine}`}>Blog</h2>
+      <section className={`${utilStyles.headingMd} ${utilStyles.padding4em}`}>
+        <h2 className={`${utilStyles.headingLg} ${utilStyles.underLine}`}>Topics</h2>
         <ul className={utilStyles.list}>
           {allPostsData.map(({ id, date, title }) => (
             <li className={utilStyles.listItem} key={id}>
@@ -44,6 +44,10 @@ export default function Home({ allPostsData }) {
           </li>
           ))}
         </ul>
+      </section>
+
+      <section className={`${utilStyles.copyright} ${utilStyles.padding4em}`}>
+      <p className={utilStyles.textCenter}>Copyright&copy;AmiYamanouchi. All Rights Reserved.</p>
       </section>
     </Layout>
   )

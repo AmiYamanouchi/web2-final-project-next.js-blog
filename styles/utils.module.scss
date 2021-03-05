@@ -4,7 +4,7 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     
   }
   
@@ -14,13 +14,15 @@
     font-weight: 800;
     letter-spacing: -0.05rem;
     margin: 1rem 0;
-    font-family: fantasy;
+    // font-family: fantasy;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
   }
   
   .headingLg {
-    font-family: fantasy;
-    
-    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.8rem;
+    color: rgb(218, 198, 22);
     // border-bottom:  1px #666;
     // line-height: 1.4;
     // margin: 1rem 0;
@@ -30,8 +32,11 @@
   
   .headingMd {
     font-size: 1.2rem;
-    line-height: 1.5;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1;
+    // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
   }
   
   .borderCircle {
@@ -45,11 +50,15 @@
   .padding1px {
     padding-top: 1px;
   }
+
+  .padding4em {
+    padding-top: 4em;
+  }
   
   .list {
-    list-style: none;
+    list-style: square;
     padding: 0;
-    margin: 0;
+    margin-left: 1em;
   }
   
   .listItem {
@@ -57,22 +66,36 @@
   }
   
   .lightText {
-    color: #666;
+    color: rgb(167, 46, 46);
   }
 
 
   .underLine {
 
-      border-bottom: solid 3px skyblue;
+      border-bottom: solid 10px rgb(255, 255, 255);
       position: relative;
 
     &:after {
       position: absolute;
       content: " ";
       display: block;
-      border-bottom: solid 3px #ffc778;
-      bottom: -3px;
-      width: 30%;
+      border-bottom: double 5px #c43333;
+      bottom: -7px;
+      width: 100%;
     }
+
+  }
+
+  .textCenter{
+    text-align: center;
+  }
+
+  .copyright{
+    font-size: 0.9em;
+    line-height: 1;
+    // font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgba(255, 255, 255, 0.486);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ 
 
   }

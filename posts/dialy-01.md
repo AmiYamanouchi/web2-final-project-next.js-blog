@@ -1,5 +1,5 @@
 ---
-title: ' 今日習ったことはなんでしょうか '
+title: ' First day of blog and Lerning Next.js '
 date: '2020-03-01'
 ---
 
